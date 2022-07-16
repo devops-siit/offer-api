@@ -16,4 +16,19 @@ public class Company extends BaseEntity {
     @Size(max = 128)
     @Column(unique = true)
     private String name;
+    
+    @NotNull
+    @Size(max = 128)
+    @Column(unique = false)
+    private String address;
+    
+    @NotNull
+    @Size(max = 25)
+    @Column(unique = false)
+    private String phone;
+    
+    @NotNull
+    @Size(max = 1024)
+    @Column(unique = false)
+    private String description;
 }
