@@ -27,10 +27,14 @@ public class CompanyService {
         Company company = new Company();
 
         company.setName(companyDTO.getName());
+        company.setPhone(companyDTO.getPhone());
+        company.setAddress(companyDTO.getAddress());
+        company.setDescription(companyDTO.getDescription());
+        company.setUuid(companyDTO.getUuid());
 
         companyRepository.save(company);
 
-        companyDTO.setUuid(company.getUuid());
+        //companyDTO.setUuid(company.getUuid());
 
         return companyDTO;
     }
