@@ -6,4 +6,4 @@ RUN mvn -f /pom.xml clean package
 FROM openjdk:18-oracle
 COPY --from=build target/offers-api-0.0.1-SNAPSHOT.jar /offers-api-0.0.1.jar
 EXPOSE 8083
-ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=dev", "/posts-api-0.0.1.jar"]
+ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=dev", "/offers-api-0.0.1.jar"]
