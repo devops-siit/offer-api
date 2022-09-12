@@ -78,6 +78,14 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>offers-api</name>
+			<url>https://maven.pkg.github.com/devops-siit/offers-api</url>
+		</repository>
+	</distributionManagement>
+
 	<profiles>
 		<profile>
 			<id>dev</id>
