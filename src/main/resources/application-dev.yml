@@ -17,8 +17,8 @@ spring:
   cloud:
     stream:
       bindings:
-        accountRegistrationChannel:
-          destination: accountRegistrations
-      default:
-        contentType: application/json
+        input:
+          destination: companyRegistrations
+          group: companyRegistrationQueue
+
 
